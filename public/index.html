@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Status Checker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-globe"></i> SiteStatus
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="Developer.html">Developer</a></li>
+            <li><a href="About Us.html">About us</a></li>
+           
+            
+        </ul>
+    </nav>
+
+    <div class="container">
+        <p><b><h1>Check Website & Service Status Instantly</h1>
+        <h3>We track service outages and let you know when websites are down or experiencing problems.</h3></b>
+        </p>
+        <div class="input-group">
+            <input type="text" id="urlInput" placeholder="Enter website URL">
+            <button onclick="checkWebsite()"><i class="fa-solid fa-search"></i> Check</button>
+        </div>
+        <div id="loading" class="loading">
+            <img src="assets/Loading.gif" alt="loading" height="30px" width="30px">
+        </div>
+        <br>
+        <p id="result"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Website Status Checker. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
